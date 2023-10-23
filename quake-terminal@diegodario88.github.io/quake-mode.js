@@ -300,7 +300,7 @@ export const QuakeMode = class {
 
       // This code should run exclusively during the initial creation of the terminal application
       // to ensure an immediate disconnection, we turn off the signal.
-      sig.off();
+      //sig.off();
 
       // Since our terminal application has his own "drop-down" showing animation, we must get rid of any other effect
       // that the windows have when they are created.
