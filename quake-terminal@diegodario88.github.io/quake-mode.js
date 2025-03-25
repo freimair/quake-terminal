@@ -261,7 +261,7 @@ export const QuakeMode = class {
           resolve(true);
         };
 
-        const windowsChangedSignalConnector = Util.once(
+        const windowsChangedSignalConnector = Util.on(
           this._terminal,
           "windows-changed",
           shellAppWindowsChangedHandler
