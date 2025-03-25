@@ -30,10 +30,6 @@ export const QuakeMode = class {
     // Enhance the close animation behavior when exiting
     this._configureActorCloseAnimation();
 
-    if (this._terminal.state === Util.SHELL_APP_STATE.RUNNING) {
-      this._internalState = Util.TERMINAL_STATE.RUNNING;
-    }
-
     /**
      * An array that stores signal connections. Used to disconnect when destroy (disable) is called.
      * @type {Array<import("./util.js").SignalConnector>}
